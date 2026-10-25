@@ -1,0 +1,24 @@
+{
+  "name": "dev-local",
+  "owner": {
+    "name": "local"
+  },
+  "description": "Local development marketplace for the Novel Director plugin.",
+  "plugins": [
+    {
+      "name": "novel-director",
+      "source": "./novel-director",
+      "version": "0.2.0",
+      "description": "小说导演台：一句话题材一键推演成书。题材构思、世界与角色、章纲、角色并行推演、正文、连贯性与去 AI 味优化、定稿，一条流水线跑完；每一步落文件，可停、可改、可分支。",
+      "displayName": "Novel Director",
+      "displayName_i18n": {
+        "zh-CN": "小说导演台"
+      },
+      "description_i18n": {
+        "zh-CN": "一句话题材一键推演成书。题材构思、世界与角色、章纲、角色并行推演、正文、连贯性与去 AI 味优化、定稿，一条流水线跑完；每一步落文件，可停、可改、可分支。",
+        "en": "A one-command, simulation-first novel pipeline: concept, world, cast, outline, multi-agent scene simulation, prose, continuity and de-AI revision, final manuscript. File-backed, resumable and branchable."
+      },
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "novel-director",
+  "version": "0.2.0",
+  "description": "小说导演台：一句话题材一键推演成书。题材构思、世界与角色、章纲、角色并行推演、正文、连贯性与去 AI 味优化、定稿，一条流水线跑完；每一步落文件，可停、可改、可分支。",
+  "description_i18n": {
+    "en": "Novel Director: a one-command, simulation-first novel pipeline. Concept, world, cast, outline, multi-agent scene simulation, prose, continuity and de-AI revision, final manuscript. Every stage is file-backed, resumable and branchable."
+  },
+  "author": {
+    "name": "local"
+  },
+  "license": "MIT",
+  "skills": "./skills",
+  "agents": "./agents",
+  "commands": "./commands",
+  "mcpServers": {
+    "story": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${ZCODE_PLUGIN_ROOT}/mcp/story-server.mjs"
+      ],
+      "cwd": "${ZCODE_PROJECT_DIR}",
+      "env": {
+        "STORY_PROJECT_DIR": "${ZCODE_PROJECT_DIR}"
+      }
+    }
+  }
+}

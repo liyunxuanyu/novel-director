@@ -1,0 +1,13 @@
+# ZCode runtime
+.zcode/
+.tmp-test/
+.story/
+.novel-run.json
+
+# dependencies
+node_modules/
+
+# logs / OS
+*.log
+.DS_Store
+Thumbs.db
